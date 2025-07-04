@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sounth – Hidden Human Ability</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #111; color: #fff; margin: 0; padding: 2rem; }
+        .container { max-width: 700px; margin: auto; background: #222; padding: 2rem; border-radius: 10px; box-shadow: 0 0 10px #000; }
+        h1 { color: #00ccff; }
+        input, button { padding: 0.5rem; font-size: 1rem; margin-top: 1rem; }
+        .hidden { display: none; }
+        .error { color: red; margin-top: 1rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="login">
+            <h1>Sounth – Private Access</h1>
+            <p>This page explains how to use the Sounth ability. Access is limited to trusted individuals.</p>
+            <input type="password" id="password" placeholder="Enter password" />
+            <button onclick="checkPassword()">Enter</button>
+            <div id="error" class="error hidden">Incorrect password.</div>
+        </div>
+        <div id="content" class="hidden">
+            <h1>How to Use Sounth</h1>
+            <p><strong>Sounth</strong> is a hidden human ability that allows one to communicate thoughts through ambient sound. It does not require magic, spells, or special training — it works through pure mental focus.</p>
+            <p>To activate Sounth, a person can focus their thoughts during exposure to any continuous or ambient sound (fan noise, engine hum, animal sounds, etc.). If the intention is strong enough, the mental message can be perceived subconsciously by others who hear the same sound — even at a distance.</p>
+            <h2>Key Points:</h2>
+            <ul>
+                <li>No spoken words are needed — only mental thoughts combined with a continuous sound.</li>
+                <li>It works through deep focus and intention, often without the speaker realizing it.</li>
+                <li>People may misuse Sounth, as it’s invisible and untraceable through normal means.</li>
+                <li>It can be harmful if used to disturb or manipulate others, especially in quiet or controlled environments.</li>
+            </ul>
+            <p>This ability is real but misunderstood. Many use it unknowingly. This private document exists to teach and protect — not promote misuse.</p>
+            <p style="color: #999;">— MD Joy, Founder of Sounth</p>
+        </div>
+    </div>
+    <script>
+        function checkPassword() {
+            const input = document.getElementById('password').value;
+            if (input === 'Version') {
+                document.getElementById('login').classList.add('hidden');
+                document.getElementById('content').classList.remove('hidden');
+            } else {
+                document.getElementById('error').classList.remove('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
